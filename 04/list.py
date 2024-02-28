@@ -52,26 +52,28 @@ print(squares[::2])
 # 거꾸로
 print(squares[::-1])
 print(squares[::-3])
+# 반반
+print(squares[:3],squares[3:])
 
-# shallo/deep copy
-players= ['charles', 'martina', 'michael', 'florence', 'eli']
-for player in players[:3]:
-    print(player.title())
+# # shallo/deep copy
+# players= ['charles', 'martina', 'michael', 'florence', 'eli']
+# for player in players[:3]:
+#     print(player.title())
 
-    my_foods = ['pizza', 'falafel', 'carrot cake']
-    freind_foods = my_foods[:] #deep copy
-    # freind_foods = my_foods #shallow copy
-    my_foods.append('cannoli')
-    print(my_foods)
-    print(freind_foods)
+#     my_foods = ['pizza', 'falafel', 'carrot cake']
+#     freind_foods = my_foods[:] #deep copy
+#     # freind_foods = my_foods #shallow copy
+#     my_foods.append('cannoli')
+#     print(my_foods)
+#     print(freind_foods)
 
-# 듀플
-dimensions = (10,20)
-# dimensions = [10,20] 이렇게 쓰면 오류 안 남
-# dimensions[0] = 30
-print(dimensions)
-# 듀플 순회하기
-for dimension in dimensions:
-    print(dimension)
-# 듀플 덮어쓰기 : 듀플을 가리키는 변수에 새 값 할당 가능
-dimension = (200,50)
+# # 듀플
+# dimensions = (10,20)
+# # dimensions = [10,20] 이렇게 쓰면 오류 안 남
+# # dimensions[0] = 30
+# print(dimensions)
+# # 듀플 순회하기
+# for dimension in dimensions:
+#     print(dimension)
+# # 듀플 덮어쓰기 : 듀플을 가리키는 변수에 새 값 할당 가능
+# dimension = (200,50)
