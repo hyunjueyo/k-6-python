@@ -17,6 +17,8 @@ print("Here is the sorted list:")
 print(sorted(cars))
 print("Here is the original list again:")
 print(cars)
+print(sorted(cars,reverse=True))
+print(cars)
 
 
 print("\nreverse():리스트의 원래 순서를 거꾸로")
@@ -29,3 +31,4 @@ print("\nlen():리스트의 길이를 반환")
 # 리스트의 길이는 인덱스와 달리 1에서 시작함
 cars = ['bmw', 'audi', 'toyota', 'subaru']
 print(len(cars))
+# print(cars[4]) 3까지만 있으니까 오류뜸, 안전하게 print(cars[-1])로 하는 게 좋다
